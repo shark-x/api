@@ -54,21 +54,21 @@
 
 Напишите синтаксическую констукцию для тестов (jest использует синтаксис mocha для написания тестов, поэтому ее можно не устанавливать в проект)
 
-    <describe('Название тестового набора', function(){
+    describe('Название тестового набора', function(){
 
         it('Название тест-кейса', async function(){
 
                 
         })
-    })>
+    })
 
 Внутри it конструкции напишите свой api тест проверяющий статус код API. 
 
-        const response = await request('Домен')  
-            .get('endpoint')
-            .query({'Параметры, которые принимает API'})
+    const response = await request('Домен')  
+        .get('endpoint')
+        .query({'Параметры, которые принимает API'})
 
-        assert.equal(response.statusCode, 200)
+    assert.equal(response.statusCode, 200)
 
 Запустите ваш тест
 
